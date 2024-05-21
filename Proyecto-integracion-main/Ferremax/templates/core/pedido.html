@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pago</title>
+</head>
+<body>
+  <div>
+    <form action="pago" method="post">
+      {% csrf_token %}
+      <h1>Pago</h1>
+      <p><strong>N. orden: </strong><span>7004545</span></p>
+      <input type="hidden" name="ordenCompra" value="7004545">
+      <p><strong>Sesión: </strong><span>998877</span></p>
+      <input type="hidden" name="idSesion" value="998877">
+      <p><strong>Precio: </strong><span id="pesos">8500</span></p>
+      <input type="hidden" name="monto" value="8500">
+      <p><strong>En dolares: </strong><span id="dolares"></span></p>
+      <button type="submit">Realizar pedido</button>
+    </form>
+  </div>
+</body>
+<script src="static/js/api-dolar.js"></script>
+</html>

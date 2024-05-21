@@ -1,0 +1,854 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0400;800&display=swap');
+
+.LetterNav {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+.NavBarDesign {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(55, 55, 55, 0.97);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    padding: 5px 4%;
+    transition: top 0.3s ease-in-out;
+}
+
+.NavBarDesign.scrolled {
+    top: -75px;
+}
+
+.NavBarDesign .logo img {
+    height: 60px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.NavBarDesign .logo img:hover {
+    transform: scale(1.2);
+}
+
+.NavBarDesign .nav-links {
+    list-style: none;
+}
+
+.NavBarDesign .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.NavBarDesign .nav-links li:hover {
+    transform: scale(1.1);
+}
+
+.NavBarDesign .nav-links a {
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;
+}
+
+.NavBarDesign .nav-links li a:hover {
+    color: rgb(224, 204, 18);
+}
+
+.NavBarDesign .btn button {
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.NavBarDesign .btn button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(224, 204, 18);
+    transform: scale(1, 1);
+}
+
+.TituloHome {
+    background-color: rgba(89, 89, 89, 0.742);
+    width: 525px;
+    height: 240px;
+    margin-top: 21rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    border-radius: 20px;
+}
+
+.BotonCatalogo {
+    width: 40%;
+    height: 2.6rem;
+    background-color: rgba(215, 207, 88, 0.651);
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    margin-left: 28%;
+}
+
+.CaracteristicasTaller {
+    width: 100%;
+    height: 11rem;
+    background-color: #1b3039;
+    margin-top: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(224, 204, 18);
+}
+
+.BloqueDosCaracteristicaTaller,
+.BloqueTresCaracteristicaTaller,
+.BloqueCuatroCaracteristicaTaller {
+    width: 20%;
+    height: 11rem;
+    border-left: 1px solid rgb(224, 204, 18);
+    border-right: 1px solid rgb(224, 204, 18);
+}
+
+
+
+.BloqueUnoCaracteristicaTaller {
+    width: 20%;
+    position: relative;
+    height: 11rem;
+    border: 1px solid rgb(224, 204, 18);
+    background-color: rgb(212, 194, 37);
+}
+
+.BloqueUnoCaracteristicaTaller h4 {
+    margin-left: 5%;
+    font-size: 1rem;
+    margin-top: 10px;
+    color: white;
+}
+
+.BloqueUnoCaracteristicaTaller h3 {
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 5%;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.BloqueDosCaracteristicaTaller h2 {
+    font-size: 3em;
+    line-height: 1em;
+    font-family: lato;
+    color: rgb(224, 204, 18);
+    font-weight: 1000;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.DesignLetraCaracteristas {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: lato;
+    color: rgb(224, 204, 18);
+    text-align: center;
+}
+
+.BloqueTresCaracteristicaTaller h2 {
+    font-size: 3em;
+    line-height: 1em;
+    font-family: lato;
+    color: rgb(224, 204, 18);
+    text-align: center;
+    font-weight: 1000;
+    margin-top: 50px;
+    position: relative;
+}
+
+.BloqueCuatroCaracteristicaTaller h2 {
+    font-size: 3em;
+    line-height: 1em;
+    font-family: lato;
+    color: rgb(224, 204, 18);
+    font-weight: 1000;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+
+}
+
+.ConveniosMarcas {
+    width: 100%;
+    height: 39rem;
+    background-color: rgb(224, 204, 18);
+    display: flex;
+    flex-direction: row;
+
+}
+
+.ContImagen {
+    width: 50%;
+    height: 39rem;
+    background-color: red;
+
+}
+
+.ConveniosMarcas img {
+    width: 100%;
+    height: 39rem;
+}
+
+.ContInformacion {
+    width: 50%;
+    height: 39rem;
+    background-color: #1b3039;
+    border-left: 2px solid rgb(224, 204, 18);
+    border-bottom: 2px solid rgb(224, 204, 18);
+    border-top: 1px solid rgb(224, 204, 18);
+}
+
+.InformationTitle {
+    width: 46%;
+    height: 13%;
+    margin-top: 2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ContTextInformation {
+    width: 50%;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    border-radius: 10px;
+    background-color: rgb(212, 194, 37);
+    box-shadow: 20px 20px 0 0 rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: row;
+}
+
+.ContTextInfo1 {
+    width: 35%;
+    height: 100%;
+    margin-left: 7%;
+    margin-right: 7%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.ConTextInfo2 {
+    width: 35%;
+    height: 100%;
+    margin-right: 7%;
+    margin-left: 7%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.ContCotizar {
+    width: 70%;
+    height: 16%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    background-color: white;
+}
+
+.DesignSpan span {
+    font: montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    color: #1b3039;
+}
+
+.ContCarrusel {
+    margin-top: 10rem;
+    width: 50%;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    box-shadow: 50px 50px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.ContCarrusel img {
+    width: 100%;
+    height: 340px;
+}
+
+.ContCarrusel .carousel-inner {
+    height: 340px;
+}
+
+.ContFooter {
+    width: 100%;
+    height: 25rem;
+    background-color: #0d171b;
+    margin-top: 10rem;
+}
+
+.ContInformationFooter {
+    width: 100%;
+    height: 21rem;
+}
+
+.ContOrderInfoFooter {
+    width: 66%;
+    height: 21rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    margin-left: 17%;
+    display: flex;
+    flex-direction: row;
+}
+
+.ContInfoFooterFoto {
+    width: 25%;
+    height: 21rem;
+}
+
+.ContInfoFooterFoto img {
+    width: 70%;
+    height: 20%;
+    margin-top: 3rem;
+    background-color: white;
+
+}
+
+.ContInfoFooterContacto {
+    width: 25%;
+    height: 21rem;
+}
+
+.Designh3 {
+    font-size: 25px;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.Designh3:hover {
+    color: rgb(224, 204, 18);
+}
+
+.DesignCorreoFooter {
+    display: flex;
+    flex-direction: row;
+}
+
+.DesignTextCorreo {
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    text-decoration: none;
+    margin-left: 14%;
+    margin-top: 3%;
+}
+
+.DesignTextCellphone {
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    text-decoration: none;
+    margin-left: 3%;
+    margin-top: 1.5%;
+}
+
+.DesignTextCorreo:hover {
+    color: rgb(224, 204, 18);
+}
+
+.DesignTextCellphone:hover {
+    color: rgb(224, 204, 18);
+}
+
+.DesignTextTelephone {
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    text-decoration: none;
+    margin-left: 6%;
+    margin-top: 1.5%;
+}
+
+.DesignCellphoneFooter {
+    display: flex;
+    flex-direction: row;
+}
+
+.DesignTelephoneFooter {
+    display: flex;
+    flex-direction: row;
+}
+
+.DesignTextTelephone:hover {
+    color: rgb(224, 204, 18);
+}
+
+.DesignStreetFooter {
+    display: flex;
+    flex-direction: row;
+}
+
+.DesignTextLocation {
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    text-decoration: none;
+    margin-left: 2.4%;
+    margin-top: 3%;
+}
+
+.DesignTextLocation:hover {
+    color: rgb(224, 204, 18);
+}
+
+.ContInfoFooterInteres {
+    width: 25%;
+    height: 21rem;
+}
+
+.DesignTextInteres {
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.DesignTextInteres:hover {
+    color: rgb(224, 204, 18);
+}
+
+.DesignInteresFooter {
+    display: flex;
+    flex-direction: row;
+}
+
+.ContInfoFooterhorarios {
+    width: 25%;
+    height: 21rem;
+}
+
+.DesignTextHorario {
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.ContDataFooter {
+    width: 100%;
+    height: 4rem;
+    background-color: #060a0b;
+    border-top: 1px solid white;
+}
+
+.ContDataFooter h6 {
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    margin-top: 2rem;
+    margin-left: 10%;
+    color: white;
+}
+
+
+
+/*Elementos para Template Nosotros*/
+
+.ContTitleNosotros {
+    margin-top: 4%;
+    width: 100%;
+    height: 8rem;
+    background-color: rgba(0, 0, 0, 0.981);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ContInfoNosotros {
+    width: 100%;
+    height: 39rem;
+    background-color: rgba(186, 186, 186, 0.456);
+    display: flex;
+    flex-direction: row;
+}
+
+.ImgContainer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34%;
+    height: 25rem;
+    background-color: #000000;
+    margin-top: 19.5rem;
+    margin-left: 16%;
+    border-radius: 10px;
+}
+
+.ContInfoText {
+    background-color: #1b3039;
+    width: 34%;
+    height: 35rem;
+    margin-left: 45%;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.4);
+}
+
+.ContInfoText span {
+    display: block;
+    text-align: left;
+    color: rgb(224, 204, 18);
+    position: relative;
+}
+
+.ContTextInfoNosotros {
+    width: 20%;
+    height: 28.5rem;
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 3.25rem;
+}
+
+.ContTitleServicios {
+    width: 100%;
+    height: 5rem;
+    background-color: rgba(0, 0, 0, 0.981);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContServiciosInfo {
+    width: 80%;
+    height: 60rem;
+    margin-left: 10%;
+    margin-top: 10rem;
+    border-radius: 10px;
+    background-color: rgba(31, 65, 89, 0.636);
+}
+
+.ServiciosCont1 {
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.ServiciosCont2 {
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.BlockServ {
+    width: 25%;
+    height: 30rem;
+}
+
+.DesignCard {
+    width: 80%;
+    height: 25rem;
+    margin-top: 2.5rem;
+    margin-left: 10%;
+    background-color: rgb(186, 186, 186);
+    border-radius: 20px;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.6s;
+}
+
+.ContImg {
+    width: 80%;
+    height: 14rem;
+    background-color: black;
+    transform: translateY(2rem);
+    margin-left: 10%;
+}
+
+.ContImg img {
+    width: 100%;
+    height: 14rem;
+}
+
+.ServText {
+    width: 80%;
+    height: 7rem;
+    margin-top: 2rem;
+    margin-left: 10%;
+}
+
+.ServText h2 {
+    font-size: 30px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    transform: translateY(1rem);
+    position: relative;
+    color: #1b3039;
+}
+
+.DesignCard:hover {
+    transform: scale(1.2);
+}
+
+
+/*Elementos para Template Contacto*/
+
+.ContFormularioContacto {
+    width: 60%;
+    height: 40rem;
+    margin-top: 12rem;
+    margin-left: 20%;
+    background-color: #1b3039;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ContFormTextInfo {
+    width: 50%;
+    height: 40rem;
+    background-color: #1b3039;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.my-input {
+    width: 40%;
+    background-color: #1b3039;
+    margin-left: 30%;
+    margin-top: 1rem;
+    height: 2rem;
+    border: 2px solid #000000;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.my-label {
+    position: absolute;
+    margin-left: 30%;
+    top: 0;
+    margin-top: 1rem;
+    left: 0;
+    padding: 0.5rem;
+    color: #ffffff;
+    transition: top 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+.my-input:focus+.my-label {
+    top: -1.5rem;
+    font-size: 0.8rem;
+}
+
+.message-box {
+    width: 100%;
+    padding: 1
+}
+
+.ContFormParrafo {
+    width: 60%;
+    height: 5rem;
+    margin-left: 20%;
+    margin-top: 1rem;
+}
+
+.comment-box {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.comment-input {
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    resize: none;
+}
+
+.comment-button {
+    background-color: #1b3039;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-left: 41%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.ContFormComplete {
+    width: 50%;
+    height: 40rem;
+    background-color: rgb(217, 199, 44);
+    ;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.BlockFacebook {
+    width: 50%;
+    height: 3rem;
+    margin-left: 20%;
+    background-color: #3b5998;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.BlockImgRedes {
+    width: 20%;
+    height: 3rem;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.BlockImgRedes img {
+    width: 100%;
+    height: 3rem;
+}
+
+.BlockTwitter {
+    width: 50%;
+    height: 3rem;
+    margin-left: 20%;
+    background-color: #1DA1F2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.BlockInstagram {
+    width: 50%;
+    height: 3rem;
+    margin-left: 20%;
+    background: linear-gradient(45deg,
+            #f09433 0%,
+            #e6685c 25%,
+            #dc2777 50%,
+            #be18ab 75%,
+            #9c27b0 100%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.DesignTextSocialWebs {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.imagenProducto {
+    width: 50%;
+}
+
+.menu-carrito {
+    position: relative;
+    background-color: #1DA1F2;
+    color: white;
+}
+
+.menu-carrito #carrito {
+    display: none;
+}
+
+.menu-carrito:hover #carrito {
+    display: block;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+    background-color: rgba(55, 55, 55, 0.97);
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+.DesignCardProducts {
+    width: 90%;
+    margin-left: 5%;
+    height: auto;
+    margin-top: 10rem;
+    display: flex;
+}
+
+.ContProducts {
+    width: 15%;
+    height: 30%;
+    margin-left: 7.5%;
+
+
+
+}
+
+.DesignCardProducts .ContServiciosInfo {
+    width: 15%;
+    height: 22rem;
+    margin-left: 7.5%;
+    margin-top: 2rem;
+    border-radius: 10px;
+    background-color: rgba(187, 187, 187, 0.74);
+
+}
+
+.ContImgProducts {
+    border-radius: 10px;
+    width: 90%;
+    height: 10rem;
+    margin-top: 4rem;
+    margin-left: 5%;
+}
+
+.ContImgProducts img {
+    border-radius: 10px;
+    width: 90%;
+    height: 10rem;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.ContServiciosInfo h5 {
+    margin-left: 10%;
+    font-family: nonito, sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.ContServiciosInfo a {
+    margin-left: 31%;
+}

@@ -1,0 +1,62 @@
+<html lang="en">
+  {%load static%}
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link href="{% static 'css/registro.css' %}" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body style="background-image: url({% static "/img/Fondo3Login.jpg" %});
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;">
+    <main>
+        <div class="Cont_Login">
+            <div class="Cont_Data">
+                <div class="Conth1">
+                    <h1>REGISTRO</h1>
+                </div>
+                <form>
+                    <div class='Cont_Datasd'>
+                        <label>Nombre de usuario</label>
+                        <input type="text" required>
+                    </div>
+                    <div class='Cont_Datasd'>
+                        <label>Nombre completo</label>
+                        <input type="text" required>
+                    </div>
+                    <div class='Cont_Datasd'>
+                        <label>Correo electrónico</label>
+                        <input type="email" required>
+                    </div>
+                    <div class='Cont_Datasd'>
+                        <label>Contraseña</label>
+                        <input type="password" required>
+                    </div>
+                    <div class='Cont_Datasd'>
+                        <label>Confirmar contraseña</label>
+                        <input type="password" required>
+                    </div>
+                </form>
+                <button class='DesignButton' type="button"><strong>Registrarse</strong></button>
+                <p class="formp">¿Ya tienes una cuenta?<a href="{% url 'Login' %}" style="color: orange;">Inicia sesión</a></p>
+                <div class="DesignLine">
+                    <div class="line"></div>
+                    <h5>O</h5>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="Cont_Info">
+                <img src="{% static 'img/Front_img.jpg' %}"></img>
+                <div class="Cont_Text">
+                    <h3 style="color: orange; font-family: nonito, sans-serif; font-weight: 200; width: 50vh; text-align: center; font-size: 3vh; margin-top: 10%;">Regístrate para poder realizar tus compras de manera <h2 class="str2">más fácil y segura</h2></h3>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+

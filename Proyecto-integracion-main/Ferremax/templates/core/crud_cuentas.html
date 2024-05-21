@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  {% load static %}
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CRUD cuentas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+  </head>
+    <body>
+        <div id="cont_fondo"> 
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <h2>Gestion de cuentas</h2>
+                        
+                        <div class="alert alert-dismissible alert-success">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            <strong class="text-dark"></strong>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body" style="background-color: white;">
+                                <form action="crud_cuentas" method="POST">
+                                  {% csrf_token %}
+                                    <div class="form-group">
+                                        <br>
+                                        <input type="text" id="txtPrimer_nombre_Empleado" name="txtPrimer_nombre_Empleado" class="form-control" placeholder="Primer_nombre_Empleado" minlength="4"  maxlength="30" required>
+                                        <br>
+                                        <input type="text" id="txtSegundo_nombre_Empleado" name="txtSegundo_nombre_Empleado" class="form-control" placeholder="Segundo_nombre_Empleado" minlength="4"  maxlength="30" required>
+                                        <br>
+                                        <input type="text" id="txtPrimer_Apellido" name="txtPrimer_Apellido" class="form-control" placeholder="Primer_Apellido" minlength="4"  maxlength="30" required>
+                                        <br>
+                                        <input type="text" id="txtSegundo_Apellido" name="txtSegundo_Apellido" class="form-control" placeholder="Segundo_Apellido" minlength="4"  maxlength="30" required>
+                                        <br>
+                                        <input type="text" id="txtDireccion" name="txtDireccion" class="form-control" placeholder="Direccion" minlength="4" maxlength="10" required>
+                                        <br>
+                                        <input type="number" id="txtEdad" name="txtEdad" class="form-control" placeholder="Edad" minlength="10" maxlength="100" required>
+                                        <br>
+                                        <label for="cargo" class="form-label">Cargo</label>
+                                        <select name="cargo" class="form-control" id="cargo" required>
+                                          <option value="" selected disabled>Seleccione cargo</option>
+                                          {% for c in cargo %}
+                                            <option value="{{c.idCargo}}">{{c.nombreCargo}}</option>
+                                          {% endfor %}
+                                        </select>
+                                        <br>
+                                    </div>
+                                    <br>
+                                    <div class="row" style="margin-left: 50px; display: flex;">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-success btn-block text-white">Guardar</button>
+                                        </div>
+                                        <br>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-danger btn-block text-white">Salir</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-8 col-xl-8">
+                        <h1>Lista de Cuentas</h1>
+                        <div class="table-responsive py-2">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Id_Empleado</th>
+                                        <th>Primer_Nombre</th>
+                                        <th>Segundo_Nombre</th>
+                                        <th>Primer_Apellido</th>
+                                        <th>Segundo_Apellido</th>
+                                        <th>Direccion</th>
+                                        <th>Edad</th>
+                                        <th>Cargo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for p in cuenta %}
+                                    <tr>
+                                        <td>{{forloop.counter}}</td>
+                                        <td>{{p.Id_Empleado}}</td>
+                                        <td>{{p.Primer_Nombre}}</td>
+                                        <td>{{p.Segundo_Nombre}}</td>
+                                        <td>{{p.Primer_Apellido}}</td>
+                                        <td>{{p.Segundo_Apellido}}</td>
+                                        <td>{{p.Direccion}}</td>
+                                        <td>{{p.Edad}}</td>
+                                        <td>{{p.Cargo}}</td>
+                                        <td><a href="" class="btn btn-info">Editar</a></td>
+                                        <td><a href="/EliminarCuenta/{{p.Id_Empleado}}" class="btn btn-danger" id="btneliminar">Eliminar</a></td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
